@@ -12,8 +12,7 @@
 
 /* 
  * Função utilitária: descarta qualquer sobra na linha atual do stdin.
- * Evita que o excesso digitado (ex.: "ABCD" quando só cabem 3) 
- * contamine a próxima leitura.
+ * Evita que o excesso digitado (ex.: "ABCD" quando só cabem 3) contamine a próxima leitura.
  */
 void limpa_linha(void) {
     int c;
@@ -24,8 +23,8 @@ int main(void) {
     setlocale(LC_ALL, "C"); /* garante separador decimal com ponto '.' */
 
     /* ---------- Configuração simples ----------
-       Se quiser usar cartas pré-definidas (sem digitar nada),
-       mude usarEntrada para 0. Assim você segue a simplificação do nível básico.
+       Para usar cartas pré-definidas (sem digitar nada),
+       mudar usarEntrada para 0. Assim você segue a simplificação de teste.
     */
     int usarEntrada = 1; /* 1 = ler do usuário; 0 = cartas fixas */
 
